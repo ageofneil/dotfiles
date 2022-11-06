@@ -1,0 +1,17 @@
+add_newline = false
+
+[gcloud]
+disabled = true
+format = 'on [$symbol$account (\($project\)) in (\($region\))]($style) '
+[gcloud.region_aliases]
+europe-west2 = "eu-w2"
+
+[git_branch]
+symbol = ""
+truncation_symbol = "..."
+
+[python]
+format = 'via [${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+
+[cmd_duration]
+min_time = 5000

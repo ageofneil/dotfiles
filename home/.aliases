@@ -1,0 +1,14 @@
+# aliases
+alias python=python3
+alias gs="git status"
+
+alias gt='starship toggle gcloud disabled'
+
+# Activate virtual enviroment
+alias venv="source venv/bin/activate"
+
+# Shorten Clear Command
+alias c="clear"
+
+#play a motivational video
+alias motivate="xdg-open https://www.youtube.com/watch?v=LAyvjURfP8k&t=5s"
