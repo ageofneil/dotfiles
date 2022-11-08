@@ -27,6 +27,9 @@ set shortmess+=c
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
 set clipboard=unnamed
 
+" Set unto directory
+set undodir=~/.vim/undodir
+
 call plug#begin('~/.vim/plugged')
     Plug 'morhetz/gruvbox'
     Plug 'phanviet/vim-monokai-pro'
