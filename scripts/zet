@@ -3,16 +3,18 @@ format_date() {
     date "+%Y%m%d%H%M%S"
 }
 
-add () {
-    dir="${HOME}/github/ageofneil/zet/reference/$(format_date)"
+fleet () {
+    dir="${HOME}/github/ageofneil/zet/fleeting/$(format_date)"
     mkdir -p "$dir"
+    chmod 777 "$dir"
+    touch "$dir/README.md"
     #cat "${HOME}/github/ageofneil/zet/reference/template.md" > "$dir/README.md"
-    vim -c "setlocal spell spelllang=en_us" "$dit/README.md"
     cd $dir
+    vim "README.md"
     line=$(head -1 "$dir/README.md" | sed 's/#\+ *//')
     echo "Adding: $line"
     git add -A "$dir"
-    git commit =m "$line"
+    git commit -m "$line"
     git push
 }
 
