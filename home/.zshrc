@@ -1,6 +1,9 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+# Path to scripts
+export PATH="$HOME/dotfiles/scripts:$PATH"
+
 # need to disable in order for exa ls alias to work
 DISABLE_LS_COLORS="true"
 ZSH_THEME="robbyrussell"
