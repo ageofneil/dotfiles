@@ -1,0 +1,25 @@
+#!/bin/bash
+format_date() {
+    date "+%Y%m%d%H%M%S"
+}
+
+add () {
+    dir="${HOME}/github/ageofneil/zet/reference/$(format_date)"
+    mkdir -p "$dir"
+    #cat "${HOME}/github/ageofneil/zet/reference/template.md" > "$dir/README.md"
+    vim -c "setlocal spell spelllang=en_us" "$dit/README.md"
+    cd $dir
+    line=$(head -1 "$dir/README.md" | sed 's/#\+ *//')
+    echo "Adding: $line"
+    git add -A "$dir"
+    git commit =m "$line"
+    git push
+}
+
+case "$1" in
+    add) add;;
+    fleet) fleet;;
+    p) p;;
+    rlist) rlist;;
+    *) echo Unsupported Prompt. ;;
+esac
