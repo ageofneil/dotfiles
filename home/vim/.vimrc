@@ -30,6 +30,9 @@ set clipboard=unnamed
 " Set unto directory
 set undodir=~/.vim/undodir
 
+" Lower default keycode delay
+set ttimeoutlen=5
+
 call plug#begin('~/.vim/plugged')
     Plug 'morhetz/gruvbox'
     Plug 'phanviet/vim-monokai-pro'
