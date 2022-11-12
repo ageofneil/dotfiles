@@ -12,6 +12,8 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=244"
 # plugins
 plugins=(
     git
+    pip
+    pyenv
     zsh-syntax-highlighting
     zsh-autosuggestions
 )
