@@ -9,8 +9,9 @@ set noswapfile
 set nobackup
 set undodir=~/.vim/undodir
 set undofile
+set nu
+set colorcolumn=80
 
-"
 "" Give more space for displaying messages.
 set cmdheight=2
 
