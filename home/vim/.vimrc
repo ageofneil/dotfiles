@@ -1,4 +1,4 @@
-syntax enable
+syntax on
 
 set tabstop=4 softtabstop=4
 set shiftwidth=4
@@ -12,18 +12,63 @@ set undofile
 set nu
 set colorcolumn=80
 
-"" Give more space for displaying messages.
+" Disable compatibility with vi which can cause unexpected issues.
+set nocompatible
+
+" Enable type file detection. Vim will be able to try to detect the type of file in use.
+filetype on
+
+" Enable plugins and load plugin for the detected file type.
+filetype plugin on
+
+" Load an indent file for the detected file type.
+filetype indent on
+
+" Give more space for displaying messages.
 set cmdheight=2
+ 
+" Highlight cursor line underneath the cursor horizontally.
+set cursorline
+
+" Use space characters instead of tabs.
+set expandtab
+
+" Do not save backup files.
+set nobackup
 
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.
-set updatetime=50
-"
-" " Don't pass messages to |ins-completion-menu|.
+set updatetime=5
+
+" Don't pass messages to |ins-completion-menu|.
 set shortmess+=c
-"
-" set colorcolumn=80
- highlight ColorColumn ctermbg=0 guibg=lightgrey
+
+" While searching though a file incrementally highlight matching characters as you type.
+set incsearch
+
+" Ignore capital letters during search.
+set ignorecase
+
+" Override the ignorecase option if searching for capital letters.
+" This will allow you to search specifically for capital letters.
+set smartcase
+
+" Show partial command you type in the last line of the screen.
+set showcmd
+
+" Show the mode you are on the last line.
+set showmode
+
+" Show matching words during a search.
+set showmatch
+
+" Use highlighting when doing a search.
+set hlsearch
+
+" Set the commands to save in history default number is 20.
+set history=100
+
+highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
 set clipboard=unnamed
