@@ -33,3 +33,7 @@ eval "$(pyenv virtualenv-init -)"
 
 # set starship as prompt
 eval "$(starship init zsh)"
+
+# Disable showing venv in prompt
+export VIRTUAL_ENV_DISABLE_PROMPT=true
+

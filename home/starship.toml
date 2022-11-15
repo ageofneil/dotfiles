@@ -11,7 +11,7 @@ symbol = ""
 truncation_symbol = "..."
 
 [python]
-format = 'via [${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+format = 'via [${symbol}${pyenv_prefix}${version}]($style)'
 
 [cmd_duration]
 min_time = 5000
