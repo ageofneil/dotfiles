@@ -12,3 +12,6 @@ alias c="clear"
 
 #play a motivational video
 alias motivate="xdg-open https://www.youtube.com/watch?v=LAyvjURfP8k&t=5s"
+
+#Connect to google_cloud_proxy
+alias cloud_sql_proxy_all="cloud_sql_proxy -instances=linus-system:northamerica-northeast1:sql-linus-systemapi=tcp:127.0.0.1:3308,linus-warehouse:northamerica-northeast1:sql-linus-warehouse=tcp:127.0.0.1:3309,linus-qa:northamerica-northeast1:sql-linus-qa-all=tcp:127.0.0.1:3311,linus-bi:northamerica-northeast1:sql-linus-bi-matomo=tcp:127.0.0.1:3313"
