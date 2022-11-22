@@ -84,6 +84,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'phanviet/vim-monokai-pro'
     Plug 'flazz/vim-colorschemes'
     Plug '/home/mpaulson/personal/vim-replace'
+    Plug 'vim-python/python-syntax'
 
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'tpope/vim-fugitive'
@@ -102,6 +103,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'ryanoasis/vim-devicons'"
 call plug#end()
 
+let g:python_highlight_all = 1
 " Theme
 colorscheme desertEx
 set background=dark
