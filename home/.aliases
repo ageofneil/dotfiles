@@ -10,6 +10,12 @@ alias venv="source venv/bin/activate"
 # Shorten Clear Command
 alias c="clear"
 
+# Linus Shops Working Directory
+alias linus="cd $HOME/github/linusshops/"
+
+# Personal Working Directory
+alias linus="cd $HOME/github/ageofneil/"
+
 #play a motivational video
 alias motivate="xdg-open https://www.youtube.com/watch?v=LAyvjURfP8k&t=5s"
 
