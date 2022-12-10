@@ -14,7 +14,7 @@ alias c="clear"
 alias linus="cd $HOME/github/linusshops/"
 
 # Personal Working Directory
-alias linus="cd $HOME/github/ageofneil/"
+alias ageofneil="cd $HOME/github/ageofneil/"
 
 #play a motivational video
 alias motivate="xdg-open https://www.youtube.com/watch?v=LAyvjURfP8k&t=5s"
