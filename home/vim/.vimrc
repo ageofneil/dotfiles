@@ -307,3 +307,6 @@ set clipboard=unnamed
 set signcolumn=no
 " Auto wrap md files
 au BufRead,BufNewFile *.md setlocal textwidth=80
+
+" allow backsapces
+set backspace=indent,eol,start

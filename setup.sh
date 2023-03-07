@@ -1,4 +1,3 @@
-
 ln -sf $HOME/dotfiles/home/.aliases $HOME/.aliases
 ln -sf $HOME/dotfiles/home/.zshrc $HOME/.zshrc
 ln -sf $HOME/dotfiles/home/starship.toml $HOME/.config/starship.toml

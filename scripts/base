@@ -1,0 +1,25 @@
+#!/bin/sh
+#base om Orders > base_om__orders.sql
+
+DATABASE=$1
+TABLE=$2
+
+cat << EOF
+with
+
+source as (
+
+    select * from {{ source('$DATABASE','$TABLE') }}
+),
+
+renamed as (
+
+  select
+    <start_here> 
+  from source
+)
+
+select * from renamed 
+EOF
+
+
