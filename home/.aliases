@@ -23,7 +23,10 @@ alias motivate="xdg-open https://www.youtube.com/watch?v=LAyvjURfP8k&t=5s"
 alias airbyte="gcloud container clusters get-credentials northamerica-northeast1-lin-87925779-gke --region northamerica-northeast1 --project linus-bi && kubectl port-forward $(kubectl get pod --selector='airbyte=webapp' --output jsonpath='{.items[0].metadata.name}') 8080:80"
 
 #Connect to google_cloud_proxy
-alias cloud_sql_proxy_all="cloud_sql_proxy -instances=linus-system:northamerica-northeast1:sql-linus-systemapi=tcp:127.0.0.1:3308,linus-warehouse:northamerica-northeast1:sql-linus-warehouse=tcp:127.0.0.1:3309,linus-qa:northamerica-northeast1:sql-linus-qa-all=tcp:127.0.0.1:3311,linus-system:northamerica-northeast1:sql-linus-systemapi-failover=tcp:127.0.0.1:3318"
+alias cloud_sql_proxy_all="cloud_sql_proxy -instances=linus-system:northamerica-northeast1:sql-linus-system=tcp:127.0.0.1:3308,linus-qa:northamerica-northeast1:sql-linus-qa-v8=tcp:127.0.0.1:3311"
 
 #Refresh terminal
-alias refresh="exec zsh"
+alias trefresh="exec zsh"
+
+#dbt Directory
+alias linusdbt="cd $HOME/github/linusshops/bi-dbt-transformations/"
